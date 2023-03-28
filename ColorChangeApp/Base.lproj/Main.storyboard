@@ -81,14 +81,23 @@
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.10000000000000001" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="QuA-xq-oeX">
                                                 <rect key="frame" x="-2" y="0.0" width="222.33333333333334" height="31"/>
                                                 <color key="minimumTrackTintColor" systemColor="systemRedColor"/>
+                                                <connections>
+                                                    <action selector="sliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="BRd-qa-IhJ"/>
+                                                </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.29999999999999999" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="5D4-pD-DfA">
                                                 <rect key="frame" x="-2" y="36" width="222.33333333333334" height="31"/>
                                                 <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
+                                                <connections>
+                                                    <action selector="sliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="T69-Iy-PgX"/>
+                                                </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ojC-89-IyE">
                                                 <rect key="frame" x="-2" y="72" width="222.33333333333334" height="31"/>
                                                 <color key="minimumTrackTintColor" systemColor="systemCyanColor"/>
+                                                <connections>
+                                                    <action selector="sliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="t1A-9z-kCc"/>
+                                                </connections>
                                             </slider>
                                         </subviews>
                                     </stackView>
@@ -107,6 +116,15 @@
                             <constraint firstItem="cFU-3r-RKi" firstAttribute="top" secondItem="JQ7-XU-yT0" secondAttribute="bottom" constant="68" id="vhw-5X-eLn"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blueLabel" destination="rFy-wo-6Ma" id="PvN-tI-LTR"/>
+                        <outlet property="blueSlider" destination="ojC-89-IyE" id="Q9E-Fg-bju"/>
+                        <outlet property="greenLabel" destination="GwR-aE-SWy" id="gf7-vg-IHp"/>
+                        <outlet property="greenSlider" destination="5D4-pD-DfA" id="8NB-PF-UVD"/>
+                        <outlet property="redLabel" destination="8Tg-A6-mnw" id="6dR-0V-U6c"/>
+                        <outlet property="redSlider" destination="QuA-xq-oeX" id="JvY-V5-iqx"/>
+                        <outlet property="viewColor" destination="JQ7-XU-yT0" id="orZ-P7-aI3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
